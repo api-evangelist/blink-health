@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of /.well-known/* on Blink Health hosts
+hosts:
+- host: https://www.blinkhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: blink-health-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.blinkhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
